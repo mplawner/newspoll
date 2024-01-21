@@ -1,0 +1,26 @@
+[OpenAI]
+openai = 
+seed = 
+temperature = 0.7
+model = gpt-3.5-turbo-1106
+system_message = Generate a compelling and slightly edgy poll question and post text based on the latest news article. The poll should be designed to spark discussion and encourage engagement on social media.
+
+[Mastodon]
+instance_url = 
+client_id = 
+client_secret = 
+access_token = 
+post_visibility = 
+poll_expiration = 
+hashtags = 
+
+[News]
+feed = 
+
+[Twitter]
+consumer_apikey = 
+consumer_apikeysecret = 
+access_token = 
+access_token_secret = 
+hashtags = 
+duration_minutes = 

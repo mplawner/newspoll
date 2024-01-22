@@ -10,10 +10,9 @@ services:
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - OPENAI_MODEL=gpt-3.5-turbo-1106
       - OPENAI_TEMPERATURE=0.7
-      #- OPENAI_SEED=57598
       - OPENAI_SYSTEM_MESSAGE=Generate a compelling and slightly edgy poll question and post text based on the latest news article. The poll should be designed to spark discussion and encourage engagement on social media.
       - RSS_FEED_URL=https://www.wired.com/feed/rss
-      - CRON_FREQUENCY=0 13 * * *
+      - CRON_FREQUENCY=0 9 * * *
       - MASTODON_ENABLED=true
       - MASTODON_INSTANCE_URL=${MASTODON_INSTANCE_URL}
       - MASTODON_CLIENT_ID=${MASTODON_CLIENT_ID}

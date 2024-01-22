@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   newspoll:
-    image: newspoll
+    image: ghcr.io/mplawner/newspoll:latest
     environment:
       - PUID=${PUID}
       - PGID=${PGID}

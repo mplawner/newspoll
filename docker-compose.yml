@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  newspoll:
+    image: newspoll
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+      - LOGLEVEL=DEBUG
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_MODEL=gpt-3.5-turbo-1106
+      - OPENAI_TEMPERATURE=0.7
+      #- OPENAI_SEED=57598
+      - OPENAI_SYSTEM_MESSAGE=Generate a compelling and slightly edgy poll question and post text based on the latest news article. The poll should be designed to spark discussion and encourage engagement on social media.
+      - RSS_FEED_URL=https://www.wired.com/feed/rss
+      - CRON_FREQUENCY=0 13 * * *
+      - MASTODON_ENABLED=true
+      - MASTODON_INSTANCE_URL=${MASTODON_INSTANCE_URL}
+      - MASTODON_CLIENT_ID=${MASTODON_CLIENT_ID}
+      - MASTODON_CLIENT_SECRET=${MASTODON_CLIENT_SECRET}
+      - MASTODON_ACCESS_TOKEN=${MASTODON_ACCESS_TOKEN}
+      - MASTODON_POST_VISIBILITY=direct
+      - MASTODON_POLL_EXPIRATION=86400
+      - TWITTER_ENABLED=false
+      - TWITTER_CONSUMER_APIKEY=${TWITTER_CONSUMER_APIKEY}
+      - TWITTER_CONSUMER_APIKEYSECRET=${TWITTER_CONSUMER_APIKEYSECRET}
+      - TWITTER_ACCESS_TOKEN=${TWITTER_ACCESS_TOKEN}
+      - TWITTER_ACCESS_TOKEN_SECRET=${TWITTER_ACCESS_TOKEN_SECRET}
+      - TWITTER_DURATION_MINUTES=1440

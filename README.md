@@ -14,7 +14,7 @@ To set up the project, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/mplawner/newspoll.git]
+   git clone https://github.com/mplawner/newspoll.git
    ```
 
 2. Install the required dependencies:
@@ -35,7 +35,7 @@ This section contains the credentials and settings for posting to Mastodon.
 - `client_id`: Your Mastodon client ID.
 - `client_secret`: Your Mastodon client secret.
 - `access_token`: Your Mastodon access token.
-- `post_visibility`: Visibility of the posts (`public`, `unlisted`, `private`, `direct`). Default is `public`.
+- `post_visibility`: Visibility of the posts (`public`, `unlisted`, `private`, `direct`). 
 - `poll_expiration`: Duration (in seconds) for which the poll will be open. Default is typically 86400 seconds (24 hours).
 
 ### [Twitter]

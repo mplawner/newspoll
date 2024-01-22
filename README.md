@@ -61,7 +61,7 @@ Remember to fill in each of these parameters with your own credentials and prefe
 ## Usage
 Run the script using:
 ```bash
-python main.py [--no-mastodon] [--no-twitter] [--config CONFIG_FILE]
+python newspoll.py [--no-mastodon] [--no-twitter] [--config CONFIG_FILE]
 ```
 - `--no-mastodon`: Skips posting to Mastodon.
 - `--no-twitter`: Skips posting to Twitter.
